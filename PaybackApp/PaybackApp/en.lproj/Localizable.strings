@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  PaybackApp
+*/
+
+// MARK: - General Localizations:
+"General.notAvailable" = "N/A";
+
+// MARK: - LoadingView
+"LoadingView.LoadingTitle" = "Loading...";
+
+// MARK: - ErrorView
+"ErrorView.Title" = "Error!";
+
+// MARK: - ListViewModel
+"ListViewModel.noInternet.text" = "No internet connection!";
+
+// MARK: - ListView
+"ListView.SumTitle" = "Sum: ";
+"ListView.PullToRefresh" = "Pull to refresh data";
+"ListCollectionView.navigationTitle" = "Payback";
+"ListCollectionItem.CategoryTitle" = "category: ";
+
+// MARK: - DetailBuilder
+"DetailBuilder.NoTransactions.error" = "Can't get transaction details!";
+
+// MARK: - DetailTransactionView
+"DetailTransactionView.Label.Partner" = "Partner Name:";
+"DetailTransactionView.Label.Description" = "Description";
+"DetailTransactionView.Label.Details" = "Transaction Details";

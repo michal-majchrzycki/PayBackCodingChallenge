@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		370363052A544CDC008FBF72 /* NetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370363042A544CDC008FBF72 /* NetworkWorker.swift */; };
+		370363082A54B58B008FBF72 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3703630A2A54B58B008FBF72 /* Localizable.strings */; };
+		3703630C2A54B5D6008FBF72 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3703630B2A54B5D6008FBF72 /* StringExtension.swift */; };
+		372512B52A4C4884002D3E76 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372512B42A4C4884002D3E76 /* DetailRouter.swift */; };
+		372512B72A4C4BA7002D3E76 /* DetailTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372512B62A4C4BA7002D3E76 /* DetailTransactionView.swift */; };
+		372512BA2A4C4EE7002D3E76 /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372512B92A4C4EE7002D3E76 /* StyleConstants.swift */; };
+		372512BC2A4C4F96002D3E76 /* BasicRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372512BB2A4C4F96002D3E76 /* BasicRectangle.swift */; };
+		372512C32A4C5A20002D3E76 /* PaybackApi in Frameworks */ = {isa = PBXBuildFile; productRef = 372512C22A4C5A20002D3E76 /* PaybackApi */; };
+		372512C62A4C6978002D3E76 /* TransactionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372512C52A4C6978002D3E76 /* TransactionItem.swift */; };
+		372512CA2A4C6E28002D3E76 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372512C92A4C6E28002D3E76 /* DateExtension.swift */; };
+		372512CC2A4C7003002D3E76 /* DateFormatterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372512CB2A4C7003002D3E76 /* DateFormatterType.swift */; };
+		372512CF2A4C7BB0002D3E76 /* TransactionItemWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372512CE2A4C7BB0002D3E76 /* TransactionItemWorker.swift */; };
+		379B27F62A4AF54800B11C09 /* PaybackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B27F52A4AF54800B11C09 /* PaybackApp.swift */; };
+		379B27FA2A4AF54A00B11C09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379B27F92A4AF54A00B11C09 /* Assets.xcassets */; };
+		379B27FD2A4AF54A00B11C09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379B27FC2A4AF54A00B11C09 /* Preview Assets.xcassets */; };
+		379B28072A4AF54A00B11C09 /* PaybackAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B28062A4AF54A00B11C09 /* PaybackAppTests.swift */; };
+		379B28112A4AF54A00B11C09 /* PaybackAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B28102A4AF54A00B11C09 /* PaybackAppUITests.swift */; };
+		379B28132A4AF54A00B11C09 /* PaybackAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B28122A4AF54A00B11C09 /* PaybackAppUITestsLaunchTests.swift */; };
+		379B28232A4AFABD00B11C09 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B28222A4AFABD00B11C09 /* ListView.swift */; };
+		379B28252A4AFAC300B11C09 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B28242A4AFAC300B11C09 /* ListViewModel.swift */; };
+		379B28272A4AFACC00B11C09 /* AppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B28262A4AFACC00B11C09 /* AppBuilder.swift */; };
+		379B28292A4AFB8900B11C09 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B28282A4AFB8900B11C09 /* DetailViewModel.swift */; };
+		379B282B2A4B000000B11C09 /* ListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B282A2A4B000000B11C09 /* ListBuilder.swift */; };
+		379B282D2A4B008700B11C09 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B282C2A4B008700B11C09 /* ListRouter.swift */; };
+		379B282F2A4B018200B11C09 /* DetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B282E2A4B018200B11C09 /* DetailBuilder.swift */; };
+		379B28312A4B01BA00B11C09 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B28302A4B01BA00B11C09 /* DetailView.swift */; };
+		379B28332A4B08AA00B11C09 /* ListCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B28322A4B08AA00B11C09 /* ListCollectionItem.swift */; };
+		379B28362A4B0B1000B11C09 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B28352A4B0B1000B11C09 /* LoadingView.swift */; };
+		379B28382A4B0B1800B11C09 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B28372A4B0B1800B11C09 /* ErrorView.swift */; };
+		379B283A2A4B0C2100B11C09 /* ListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B28392A4B0C2100B11C09 /* ListCollectionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		379B28032A4AF54A00B11C09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 379B27EA2A4AF54800B11C09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 379B27F12A4AF54800B11C09;
+			remoteInfo = PaybackApp;
+		};
+		379B280D2A4AF54A00B11C09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 379B27EA2A4AF54800B11C09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 379B27F12A4AF54800B11C09;
+			remoteInfo = PaybackApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		370363042A544CDC008FBF72 /* NetworkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWorker.swift; sourceTree = "<group>"; };
+		370363092A54B58B008FBF72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3703630B2A54B5D6008FBF72 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		372512B42A4C4884002D3E76 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		372512B62A4C4BA7002D3E76 /* DetailTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionView.swift; sourceTree = "<group>"; };
+		372512B92A4C4EE7002D3E76 /* StyleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
+		372512BB2A4C4F96002D3E76 /* BasicRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRectangle.swift; sourceTree = "<group>"; };
+		372512C02A4C5A15002D3E76 /* PaybackApi */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PaybackApi; path = ../PaybackApi; sourceTree = "<group>"; };
+		372512C52A4C6978002D3E76 /* TransactionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItem.swift; sourceTree = "<group>"; };
+		372512C92A4C6E28002D3E76 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		372512CB2A4C7003002D3E76 /* DateFormatterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterType.swift; sourceTree = "<group>"; };
+		372512CE2A4C7BB0002D3E76 /* TransactionItemWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemWorker.swift; sourceTree = "<group>"; };
+		379B27F22A4AF54800B11C09 /* PaybackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaybackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		379B27F52A4AF54800B11C09 /* PaybackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaybackApp.swift; sourceTree = "<group>"; };
+		379B27F92A4AF54A00B11C09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		379B27FC2A4AF54A00B11C09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		379B28022A4AF54A00B11C09 /* PaybackAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaybackAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		379B28062A4AF54A00B11C09 /* PaybackAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaybackAppTests.swift; sourceTree = "<group>"; };
+		379B280C2A4AF54A00B11C09 /* PaybackAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaybackAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		379B28102A4AF54A00B11C09 /* PaybackAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaybackAppUITests.swift; sourceTree = "<group>"; };
+		379B28122A4AF54A00B11C09 /* PaybackAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaybackAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		379B28222A4AFABD00B11C09 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		379B28242A4AFAC300B11C09 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		379B28262A4AFACC00B11C09 /* AppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilder.swift; sourceTree = "<group>"; };
+		379B28282A4AFB8900B11C09 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		379B282A2A4B000000B11C09 /* ListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBuilder.swift; sourceTree = "<group>"; };
+		379B282C2A4B008700B11C09 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		379B282E2A4B018200B11C09 /* DetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBuilder.swift; sourceTree = "<group>"; };
+		379B28302A4B01BA00B11C09 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		379B28322A4B08AA00B11C09 /* ListCollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionItem.swift; sourceTree = "<group>"; };
+		379B28352A4B0B1000B11C09 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		379B28372A4B0B1800B11C09 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		379B28392A4B0C2100B11C09 /* ListCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		379B27EF2A4AF54800B11C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372512C32A4C5A20002D3E76 /* PaybackApi in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379B27FF2A4AF54A00B11C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379B28092A4AF54A00B11C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		372512B82A4C4ED7002D3E76 /* StyleGuide */ = {
+			isa = PBXGroup;
+			children = (
+				372512B92A4C4EE7002D3E76 /* StyleConstants.swift */,
+				372512CB2A4C7003002D3E76 /* DateFormatterType.swift */,
+			);
+			path = StyleGuide;
+			sourceTree = "<group>";
+		};
+		372512BF2A4C5A15002D3E76 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				372512C02A4C5A15002D3E76 /* PaybackApi */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		372512C12A4C5A20002D3E76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		372512C42A4C696D002D3E76 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				372512C52A4C6978002D3E76 /* TransactionItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		372512C82A4C6E1B002D3E76 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				372512C92A4C6E28002D3E76 /* DateExtension.swift */,
+				3703630B2A54B5D6008FBF72 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		372512CD2A4C7B63002D3E76 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				372512CE2A4C7BB0002D3E76 /* TransactionItemWorker.swift */,
+				370363042A544CDC008FBF72 /* NetworkWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		379B27E92A4AF54800B11C09 = {
+			isa = PBXGroup;
+			children = (
+				372512BF2A4C5A15002D3E76 /* Packages */,
+				379B27F42A4AF54800B11C09 /* PaybackApp */,
+				379B28052A4AF54A00B11C09 /* PaybackAppTests */,
+				379B280F2A4AF54A00B11C09 /* PaybackAppUITests */,
+				379B27F32A4AF54800B11C09 /* Products */,
+				372512C12A4C5A20002D3E76 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		379B27F32A4AF54800B11C09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				379B27F22A4AF54800B11C09 /* PaybackApp.app */,
+				379B28022A4AF54A00B11C09 /* PaybackAppTests.xctest */,
+				379B280C2A4AF54A00B11C09 /* PaybackAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		379B27F42A4AF54800B11C09 /* PaybackApp */ = {
+			isa = PBXGroup;
+			children = (
+				372512CD2A4C7B63002D3E76 /* Workers */,
+				372512C82A4C6E1B002D3E76 /* Extensions */,
+				372512C42A4C696D002D3E76 /* Models */,
+				372512B82A4C4ED7002D3E76 /* StyleGuide */,
+				379B281F2A4AF7B000B11C09 /* Modules */,
+				379B27F52A4AF54800B11C09 /* PaybackApp.swift */,
+				379B28262A4AFACC00B11C09 /* AppBuilder.swift */,
+				379B27F92A4AF54A00B11C09 /* Assets.xcassets */,
+				379B27FB2A4AF54A00B11C09 /* Preview Content */,
+				3703630A2A54B58B008FBF72 /* Localizable.strings */,
+			);
+			path = PaybackApp;
+			sourceTree = "<group>";
+		};
+		379B27FB2A4AF54A00B11C09 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				379B27FC2A4AF54A00B11C09 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		379B28052A4AF54A00B11C09 /* PaybackAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				379B28062A4AF54A00B11C09 /* PaybackAppTests.swift */,
+			);
+			path = PaybackAppTests;
+			sourceTree = "<group>";
+		};
+		379B280F2A4AF54A00B11C09 /* PaybackAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				379B28102A4AF54A00B11C09 /* PaybackAppUITests.swift */,
+				379B28122A4AF54A00B11C09 /* PaybackAppUITestsLaunchTests.swift */,
+			);
+			path = PaybackAppUITests;
+			sourceTree = "<group>";
+		};
+		379B281F2A4AF7B000B11C09 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				379B28342A4B0AE500B11C09 /* ReusableViews */,
+				379B28212A4AFAB100B11C09 /* Details */,
+				379B28202A4AFAAB00B11C09 /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		379B28202A4AFAAB00B11C09 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				379B28242A4AFAC300B11C09 /* ListViewModel.swift */,
+				379B28222A4AFABD00B11C09 /* ListView.swift */,
+				379B28392A4B0C2100B11C09 /* ListCollectionView.swift */,
+				379B282A2A4B000000B11C09 /* ListBuilder.swift */,
+				379B282C2A4B008700B11C09 /* ListRouter.swift */,
+				379B28322A4B08AA00B11C09 /* ListCollectionItem.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		379B28212A4AFAB100B11C09 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				379B28282A4AFB8900B11C09 /* DetailViewModel.swift */,
+				379B28302A4B01BA00B11C09 /* DetailView.swift */,
+				379B282E2A4B018200B11C09 /* DetailBuilder.swift */,
+				372512B42A4C4884002D3E76 /* DetailRouter.swift */,
+				372512B62A4C4BA7002D3E76 /* DetailTransactionView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		379B28342A4B0AE500B11C09 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				379B28352A4B0B1000B11C09 /* LoadingView.swift */,
+				379B28372A4B0B1800B11C09 /* ErrorView.swift */,
+				372512BB2A4C4F96002D3E76 /* BasicRectangle.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		379B27F12A4AF54800B11C09 /* PaybackApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 379B28162A4AF54A00B11C09 /* Build configuration list for PBXNativeTarget "PaybackApp" */;
+			buildPhases = (
+				379B27EE2A4AF54800B11C09 /* Sources */,
+				379B27EF2A4AF54800B11C09 /* Frameworks */,
+				379B27F02A4AF54800B11C09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaybackApp;
+			packageProductDependencies = (
+				372512C22A4C5A20002D3E76 /* PaybackApi */,
+			);
+			productName = PaybackApp;
+			productReference = 379B27F22A4AF54800B11C09 /* PaybackApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		379B28012A4AF54A00B11C09 /* PaybackAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 379B28192A4AF54A00B11C09 /* Build configuration list for PBXNativeTarget "PaybackAppTests" */;
+			buildPhases = (
+				379B27FE2A4AF54A00B11C09 /* Sources */,
+				379B27FF2A4AF54A00B11C09 /* Frameworks */,
+				379B28002A4AF54A00B11C09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				379B28042A4AF54A00B11C09 /* PBXTargetDependency */,
+			);
+			name = PaybackAppTests;
+			productName = PaybackAppTests;
+			productReference = 379B28022A4AF54A00B11C09 /* PaybackAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		379B280B2A4AF54A00B11C09 /* PaybackAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 379B281C2A4AF54A00B11C09 /* Build configuration list for PBXNativeTarget "PaybackAppUITests" */;
+			buildPhases = (
+				379B28082A4AF54A00B11C09 /* Sources */,
+				379B28092A4AF54A00B11C09 /* Frameworks */,
+				379B280A2A4AF54A00B11C09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				379B280E2A4AF54A00B11C09 /* PBXTargetDependency */,
+			);
+			name = PaybackAppUITests;
+			productName = PaybackAppUITests;
+			productReference = 379B280C2A4AF54A00B11C09 /* PaybackAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		379B27EA2A4AF54800B11C09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					379B27F12A4AF54800B11C09 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					379B28012A4AF54A00B11C09 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 379B27F12A4AF54800B11C09;
+					};
+					379B280B2A4AF54A00B11C09 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 379B27F12A4AF54800B11C09;
+					};
+				};
+			};
+			buildConfigurationList = 379B27ED2A4AF54800B11C09 /* Build configuration list for PBXProject "PaybackApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 379B27E92A4AF54800B11C09;
+			productRefGroup = 379B27F32A4AF54800B11C09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				379B27F12A4AF54800B11C09 /* PaybackApp */,
+				379B28012A4AF54A00B11C09 /* PaybackAppTests */,
+				379B280B2A4AF54A00B11C09 /* PaybackAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		379B27F02A4AF54800B11C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379B27FD2A4AF54A00B11C09 /* Preview Assets.xcassets in Resources */,
+				370363082A54B58B008FBF72 /* Localizable.strings in Resources */,
+				379B27FA2A4AF54A00B11C09 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379B28002A4AF54A00B11C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379B280A2A4AF54A00B11C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		379B27EE2A4AF54800B11C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379B28332A4B08AA00B11C09 /* ListCollectionItem.swift in Sources */,
+				372512C62A4C6978002D3E76 /* TransactionItem.swift in Sources */,
+				379B282F2A4B018200B11C09 /* DetailBuilder.swift in Sources */,
+				379B28312A4B01BA00B11C09 /* DetailView.swift in Sources */,
+				379B28362A4B0B1000B11C09 /* LoadingView.swift in Sources */,
+				372512CA2A4C6E28002D3E76 /* DateExtension.swift in Sources */,
+				379B28292A4AFB8900B11C09 /* DetailViewModel.swift in Sources */,
+				372512CF2A4C7BB0002D3E76 /* TransactionItemWorker.swift in Sources */,
+				372512BC2A4C4F96002D3E76 /* BasicRectangle.swift in Sources */,
+				372512B72A4C4BA7002D3E76 /* DetailTransactionView.swift in Sources */,
+				372512B52A4C4884002D3E76 /* DetailRouter.swift in Sources */,
+				379B282D2A4B008700B11C09 /* ListRouter.swift in Sources */,
+				379B282B2A4B000000B11C09 /* ListBuilder.swift in Sources */,
+				379B28382A4B0B1800B11C09 /* ErrorView.swift in Sources */,
+				379B27F62A4AF54800B11C09 /* PaybackApp.swift in Sources */,
+				372512CC2A4C7003002D3E76 /* DateFormatterType.swift in Sources */,
+				379B28252A4AFAC300B11C09 /* ListViewModel.swift in Sources */,
+				379B28272A4AFACC00B11C09 /* AppBuilder.swift in Sources */,
+				370363052A544CDC008FBF72 /* NetworkWorker.swift in Sources */,
+				379B28232A4AFABD00B11C09 /* ListView.swift in Sources */,
+				372512BA2A4C4EE7002D3E76 /* StyleConstants.swift in Sources */,
+				3703630C2A54B5D6008FBF72 /* StringExtension.swift in Sources */,
+				379B283A2A4B0C2100B11C09 /* ListCollectionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379B27FE2A4AF54A00B11C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379B28072A4AF54A00B11C09 /* PaybackAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379B28082A4AF54A00B11C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379B28132A4AF54A00B11C09 /* PaybackAppUITestsLaunchTests.swift in Sources */,
+				379B28112A4AF54A00B11C09 /* PaybackAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		379B28042A4AF54A00B11C09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 379B27F12A4AF54800B11C09 /* PaybackApp */;
+			targetProxy = 379B28032A4AF54A00B11C09 /* PBXContainerItemProxy */;
+		};
+		379B280E2A4AF54A00B11C09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 379B27F12A4AF54800B11C09 /* PaybackApp */;
+			targetProxy = 379B280D2A4AF54A00B11C09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3703630A2A54B58B008FBF72 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				370363092A54B58B008FBF72 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		379B28142A4AF54A00B11C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		379B28152A4AF54A00B11C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		379B28172A4AF54A00B11C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PaybackApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8474B8LHB7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm.PaybackApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		379B28182A4AF54A00B11C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PaybackApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8474B8LHB7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm.PaybackApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		379B281A2A4AF54A00B11C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8474B8LHB7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm.PaybackAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaybackApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PaybackApp";
+			};
+			name = Debug;
+		};
+		379B281B2A4AF54A00B11C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8474B8LHB7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm.PaybackAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaybackApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PaybackApp";
+			};
+			name = Release;
+		};
+		379B281D2A4AF54A00B11C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8474B8LHB7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm.PaybackAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaybackApp;
+			};
+			name = Debug;
+		};
+		379B281E2A4AF54A00B11C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8474B8LHB7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm.PaybackAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaybackApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		379B27ED2A4AF54800B11C09 /* Build configuration list for PBXProject "PaybackApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379B28142A4AF54A00B11C09 /* Debug */,
+				379B28152A4AF54A00B11C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		379B28162A4AF54A00B11C09 /* Build configuration list for PBXNativeTarget "PaybackApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379B28172A4AF54A00B11C09 /* Debug */,
+				379B28182A4AF54A00B11C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		379B28192A4AF54A00B11C09 /* Build configuration list for PBXNativeTarget "PaybackAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379B281A2A4AF54A00B11C09 /* Debug */,
+				379B281B2A4AF54A00B11C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		379B281C2A4AF54A00B11C09 /* Build configuration list for PBXNativeTarget "PaybackAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379B281D2A4AF54A00B11C09 /* Debug */,
+				379B281E2A4AF54A00B11C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		372512C22A4C5A20002D3E76 /* PaybackApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PaybackApi;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 379B27EA2A4AF54800B11C09 /* Project object */;
+}
